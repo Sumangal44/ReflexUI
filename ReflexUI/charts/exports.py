@@ -16,11 +16,11 @@ from .line.v2 import linechart_v2
 
 from ..wrappers.component.wrapper import component_wrapper
 
-BASE_PATH: str = "https://github.com/LineIndent/buridan-ui/blob/main/buridan_ui/charts/"
+BASE_PATH: str = "https://github.com/sumangal44/ReflexUI/blob/master/ReflexUI/charts/"
 
 
 def get_source(directory: str, filename: str) -> str:
-    with open(os.path.join("buridan_ui", "charts", directory, filename), "r") as file:
+    with open(os.path.join("ReflexUI", "charts", directory, filename), "r") as file:
         return file.read()
 
 
