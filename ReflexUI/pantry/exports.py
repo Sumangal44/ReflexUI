@@ -56,7 +56,7 @@ from .footers.v2 import footer_v2
 
 from ..wrappers.component.wrapper import component_wrapper
 
-BASE_PATH: str = "https://github.com/Sumangal44/ReflexUI/blob/master/ReflexUI/pantry"
+BASE_PATH: str = "https://github.com/Sumangal44/ReflexUI/blob/master/ReflexUI/pantry/"
 
 
 def get_source(directory: str, filename: str):
