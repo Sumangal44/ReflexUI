@@ -58,7 +58,7 @@ if DEV:
         return [export() for export in ENV["config"][ENV["dir"]]]
 
     app.add_page(landing_page(), route="/", title="Reflex UI")
-    app.add_page(__(), route=ENV["path"], title=f"{ENV['name']} - Buridan UI")
+    app.add_page(__(), route=ENV["path"], title=f"{ENV['name']} - Reflex UI")
 
 else:
     app.add_page(landing_page(), route="/", title="Reflex UI")

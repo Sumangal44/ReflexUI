@@ -5,7 +5,7 @@ import reflex as rx
 from dataclasses import dataclass, field
 from reflex.constants.colors import Color
 
-from buridan_ui.pantry.footers.v1 import FooterV1Style
+from ReflexUI.pantry.footers.v1 import FooterV1Style
 
 active: Color = rx.color("slate", 12)
 passive: Color = rx.color("slate", 10)
