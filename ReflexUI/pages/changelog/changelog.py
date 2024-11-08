@@ -99,7 +99,7 @@ def changelog():
                     [
                         rx.text("Changes to Charts component wrapper.", size="2"),
                         rx.text("Updated drawer, themes, and much more!", size="2"),
-                        changelog_badge("party-popper", "buridan/ui v0.2.0"),
+                        changelog_badge("party-popper", "ReflexUI v0.2.0"),
                     ],
                 ),
                 wrapper(
@@ -110,7 +110,7 @@ def changelog():
                             "RAG Application",
                             "/intractive/retrieval-augmented-generation",
                         ),
-                        changelog_badge("party-popper", "buridan/ui v0.1.0"),
+                        changelog_badge("party-popper", "ReflexUI v0.1.0"),
                     ],
                 ),
                 wrapper(
@@ -124,10 +124,10 @@ def changelog():
                     [create_pantry_links(ChartRoutes)],
                 ),
                 wrapper(
-                    "buridan/ui v0.0.1 Deployed to Reflex",
+                    "ReflexUI v0.0.1 Deployed to Reflex",
                     "October 16, 2024",
                     [
-                        changelog_badge("party-popper", "buridan/ui v0.0.1"),
+                        changelog_badge("party-popper", "ReflexUI v0.0.1"),
                     ],
                 ),
                 wrapper("Initial Release", "October 5, 2024"),

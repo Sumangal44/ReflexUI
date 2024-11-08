@@ -9,7 +9,7 @@ from ....wrappers.base import base
 @base(
     "/interactive/retrieval-augmented-generation",
     "Get Fit AI Application",
-    title="RAG - buridan/ui",
+    title="RAG - ReflexUI",
 )
 def rag_ai_app() -> list[rx.Component]:
     return [

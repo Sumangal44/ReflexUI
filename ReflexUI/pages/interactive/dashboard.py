@@ -395,7 +395,7 @@ def table():
     )
 
 
-@base("/interactive/dashboard", "Interactive Table", title="Dashboard - buridan/ui")
+@base("/interactive/dashboard", "Interactive Table", title="Dashboard - ReflexUI")
 def dashboard():
     return [
         rx.hstack(

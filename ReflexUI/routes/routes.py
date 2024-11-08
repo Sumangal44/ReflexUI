@@ -19,9 +19,9 @@ class Routes:
                 "dir": "installation",
             },
             {
-                "name": "Who is Buridan?",
-                "path": "/getting-started/who-is-buridan",
-                "dir": "buridan",
+                "name": "what is ReflexUI?",
+                "path": "/getting-started/who-is-reflexui",
+                "dir": "reflexui",
             },
             {
                 "name": "Changelog",

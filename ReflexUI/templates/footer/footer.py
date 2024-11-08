@@ -51,9 +51,9 @@ def footer():
         create_footer_item("Resources", SideMenuState.ResourcesRoutes),
         rx.divider(height="2em", opacity="0"),
         rx.vstack(
-            rx.heading("buridan/ui", size="5", font_weight="900"),
+            rx.heading("ReflexUI", size="5", font_weight="900"),
             rx.text(
-                "© 2024 Ahmad Hakim. All rights reserved.", size="2", weight="bold"
+                "© 2024 sumangal karan. All rights reserved.", size="2", weight="bold"
             ),
             width="100%",
         ),
@@ -64,9 +64,9 @@ def footer():
 def desktop_footer():
     return rx.vstack(
         rx.vstack(
-            rx.heading("buridan/ui", size="5", font_weight="900"),
+            rx.heading("ReflexUI", size="5", font_weight="900"),
             rx.text(
-                "© 2024 Ahmad Hakim. All rights reserved.", size="2", weight="bold"
+                "© 2024 sumangal karan. All rights reserved.", size="2", weight="bold"
             ),
             width="100%",
         ),

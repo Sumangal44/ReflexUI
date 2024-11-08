@@ -56,11 +56,11 @@ from .footers.v2 import footer_v2
 
 from ..wrappers.component.wrapper import component_wrapper
 
-BASE_PATH: str = "https://github.com/LineIndent/buridan-ui/blob/main/buridan_ui/pantry/"
+BASE_PATH: str = "https://github.com/Sumangal44/ReflexUI/blob/master/ReflexUI/pantry"
 
 
 def get_source(directory: str, filename: str):
-    with open(os.path.join("buridan_ui", "pantry", directory, filename), "r") as file:
+    with open(os.path.join("ReflexUI", "pantry", directory, filename), "r") as file:
         return file.read()
 
 

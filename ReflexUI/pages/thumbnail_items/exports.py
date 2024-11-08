@@ -7,12 +7,12 @@ from ...routes.routes import PantryRoutes
 
 
 def get_svg_files(
-    base_url: str = "https://raw.githubusercontent.com/LineIndent/buridan-ui/main/assets/thumbnails",
+    base_url: str = "https://raw.githubusercontent.com/sumangal44/ReflexUI/master/assets/thumbnails",
 ) -> List[Dict[str, str]]:
 
     svg_files = [
         os.path.basename(directory)
-        for directory, _, _ in os.walk("buridan_ui/pantry")
+        for directory, _, _ in os.walk("ReflexUI/pantry")
         if os.path.basename(directory) not in {"pantry", "__pycache__"}
     ]
 
@@ -23,7 +23,7 @@ def get_svg_files(
 
 
 def get_component_quantities(
-    pantry_folder: str = "buridan_ui/pantry",
+    pantry_folder: str = "ReflexUI/pantry",
 ) -> Dict[str, int]:
     quantities = defaultdict(int)
     for subdir, _, files in os.walk(pantry_folder):

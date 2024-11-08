@@ -9,12 +9,7 @@ def color_scheme_boxes(color: str):
         "height": "15px",
     }
 
-    name_map = {
-        "blue": "Fayrouz فَيْرُوز",
-        "ruby": "Yaqout يَاقُوت",
-        "jade": "Zumurud زُمُرُّد",
-        "gray": "Hematite هَيْمَاتِيت",
-    }
+    name_map = new_func()
 
     return rx.hover_card.root(
         rx.hover_card.trigger(
@@ -72,6 +67,16 @@ def color_scheme_boxes(color: str):
         ),
     )
 
+def new_func():
+    name_map = {
+        "blue": "Fayrouz नीलम",
+        "ruby": "Yaqout याकूत",
+        "jade": "Zumurud जमुरुद",
+        "gray": "Hematite हेमटाइट",
+    }
+    
+    return name_map
+
 
 def component_wrapper_color_scheme():
     return rx.hstack(
@@ -80,3 +85,4 @@ def component_wrapper_color_scheme():
         align="center",
         padding=["0px 0px" if i <= 1 else "0px 24px" for i in range(6)],
     )
+

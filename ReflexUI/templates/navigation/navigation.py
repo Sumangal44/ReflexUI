@@ -38,7 +38,7 @@ def navigation_right_side_items():
         ),
         rx.link(
             rx.icon(tag="github", size=16, color=rx.color("slate", 12)),
-            href="https://github.com/LineIndent/buridan-ui",
+            href="https://github.com/sumangal44/ReflexUI",
             display=["none", "none", "none", "none", "none", "flex"],
         ),
         rx.color_mode.switch(),
@@ -59,7 +59,7 @@ def navigation_left_side_items():
     return rx.hstack(
         rx.image(src="/logo.jpg", **NavigationStyle.logo),
         rx.heading(
-            "buridan/ui",
+            "ReflexUI",
             size="5",
             font_weight="900",
             cursor="pointer",
