@@ -33,11 +33,12 @@ class Routes:
 
     interactive: List[Dict[str, str]] = field(
         default_factory=lambda: [
-            {"name": "Dashboard", "path": "/interactive/dashboard", "is_beta": True},
+            # {"name": "Dashboard", "path": "/interactive/dashboard", "is_beta": True},
             {
                 "name": "RAG Application",
                 "path": "/interactive/retrieval-augmented-generation",
                 "is_new": True,
+                "dir": "rag",
             },
         ]
     )
@@ -151,7 +152,7 @@ class Routes:
             {"name": "Reflex Framework", "path": "https://reflex.dev/"},
             {"name": "Source Code", "path": "https://github.com/sumangal44/ReflexUI"},
             {"name": "GitHub", "path": "https://github.com/sumangal44"},
-            {"name": "@LineIndent", "path": "https://www.youtube.com/@DesicodeDiaries"},
+            {"name": "@DesicodeDiaries", "path": "https://www.youtube.com/@DesicodeDiaries"},
         ]
     )
 

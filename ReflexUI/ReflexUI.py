@@ -7,6 +7,7 @@ from .routes.routes import Routes
 from .pantry.exports import pantry_exports_config
 from .charts.exports import charts_exports_config
 from .pages.started_items.exports import getting_started_config
+from .pages.interactive.exports import interactive_config
 from .pages.landing.hero import landing_page
 
 
@@ -42,7 +43,7 @@ def add_routes(routes, export_config):
 
 # ... set the DEV var to True for faster hot reload
 # ... ... change the ENV to match the page in progress
-DEV: bool = True
+DEV: bool = False
 
 if DEV:
 
@@ -60,8 +61,10 @@ if DEV:
     app.add_page(landing_page(), route="/", title="Reflex UI")
     app.add_page(__(), route=ENV["path"], title=f"{ENV['name']} - Reflex UI")
 
+
 else:
     app.add_page(landing_page(), route="/", title="Reflex UI")
+    add_routes(Routes.interactive, interactive_config)
     add_routes(Routes.pantries, pantry_exports_config)
     add_routes(Routes.charts, charts_exports_config)
     add_routes(Routes.started, getting_started_config)
