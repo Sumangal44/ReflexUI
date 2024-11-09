@@ -99,45 +99,12 @@ def changelog():
         rx.box(
             rx.vstack(
                 wrapper(
-                    "Site Refinement and UI Updates",
-                    "November 08, 2024",
+                    "ReflexUI v2.0.0 Release Deployed to Reflex",
+                   "November 9, 2024",
                     [
-                        info("Changes to Charts component wrapper."),
-                        info("Codebase refactor and state changes."),
-                        info("Changes to code block theme and font size."),
-                        info("Major changes to @component_wrapper menu items."),
-                        changelog_badge("party-popper", "ReflexUI v0.2.0"),
+                        changelog_badge("party-popper", "ReflexUI v2.0.0"),
                     ],
                 ),
-                wrapper(
-                    "New Interactive App: RAG AI Application",
-                    "October 30, 2024",
-                    [
-                        create_link(
-                            "RAG Application",
-                            "/intractive/retrieval-augmented-generation",
-                        ),
-                        changelog_badge("party-popper", "ReflexUI v0.1.0"),
-                    ],
-                ),
-                wrapper(
-                    "New Components and Improvements to Pantry Items",
-                    "October 21, 2024",
-                    [create_pantry_links(PantryRoutes)],
-                ),
-                wrapper(
-                    "New Library Component: Charts",
-                    "October 18, 2024",
-                    [create_pantry_links(ChartRoutes)],
-                ),
-                wrapper(
-                    "ReflexUI v0.0.1 Release Deployed to Reflex",
-                   "October 16, 2024",
-                    [
-                        changelog_badge("party-popper", "ReflexUI v0.0.1"),
-                    ],
-                ),
-                wrapper("Initial Release", "October 5, 2024"),
                 **ChangelogStyle.content,
             ),
             width="100%",
