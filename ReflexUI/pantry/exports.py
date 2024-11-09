@@ -44,6 +44,7 @@ from .animations.v5 import animation_v5
 
 from .prompts.v1 import prompt_v1
 from .prompts.v2 import prompt_v2
+from .buttons.v1 import button_v1
 
 from .cards.v1 import card_v1
 from .cards.v2 import card_v2
@@ -100,9 +101,8 @@ pantry_exports_config = {
     "featured": [create_export(featured_v1, "featured", 1),],
     "lists": [create_export(lists_v1, "lists", 1)],
     "timeline": [create_export(timeline_v1, "timeline", 1),
-                 create_export(timeline_v2, "timeline", 2),
-                 
-                 ],
+                create_export(timeline_v2, "timeline", 2),
+                ],
     "onboardings": [create_export(onboardings_v1, "onboardings", 1)],
     "pricing": [create_export(pricing_v1, "pricing", 1)],
     "popups": [
@@ -134,5 +134,8 @@ pantry_exports_config = {
     "footers": [
         create_export(footer_v1, "footers", 1),
         create_export(footer_v2, "footers", 2),
+    ],
+    "buttons": [
+        create_export(button_v1, "buttons", 1),
     ],
 }

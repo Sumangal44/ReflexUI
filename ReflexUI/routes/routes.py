@@ -87,6 +87,11 @@ class Routes:
                 "dir": "menus",
             },
             {
+                "name":"Buttons",
+                "path": "/pantry/buttons",
+                "dir": "buttons",
+            },
+            {
                 "name": "Backgrounds",
                 "path": "/pantry/backgrounds",
                 "dir": "backgrounds",
