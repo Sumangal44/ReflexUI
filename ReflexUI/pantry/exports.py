@@ -26,6 +26,8 @@ from .featured.v1 import featured_v1
 from .lists.v1 import lists_v1
 
 from .timeline.v1 import timeline_v1
+from .timeline.v2 import timeline_v2
+
 
 from .onboardings.v1 import onboardings_v1
 
@@ -95,9 +97,12 @@ pantry_exports_config = {
         create_export(forms_v2, "forms", 2),
         create_export(forms_v3, "forms", 3),
     ],
-    "featured": [create_export(featured_v1, "featured", 1)],
+    "featured": [create_export(featured_v1, "featured", 1),],
     "lists": [create_export(lists_v1, "lists", 1)],
-    "timeline": [create_export(timeline_v1, "timeline", 1)],
+    "timeline": [create_export(timeline_v1, "timeline", 1),
+                 create_export(timeline_v2, "timeline", 2),
+                 
+                 ],
     "onboardings": [create_export(onboardings_v1, "onboardings", 1)],
     "pricing": [create_export(pricing_v1, "pricing", 1)],
     "popups": [
