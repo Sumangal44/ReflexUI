@@ -10,7 +10,7 @@ Please take a moment to review this document before submitting your first pull r
 |------------------------------------------|---------------------------------------------------------|
 | `ReflexUI/routes`                      | The dir where all the routes are held.                  |
 | `ReflexUI/pantry`                      | The main dir where all compoenents are stored.          |
-| `ReflexUI/pages/pantry_items/items.py` | The main export file for all pages related to *pantry*. |
+| `ReflexUI/pantry/exports.py` | The main export file for all pages related to *pantry*. |
 
 ## Development
 
