@@ -32,7 +32,7 @@ def drawer():
                 rx.vstack(
                     rx.hstack(
                         rx.heading(
-                            "buridan/ui",
+                            "ReflexUI",
                             size="5",
                             font_weight="900",
                             cursor="pointer",
