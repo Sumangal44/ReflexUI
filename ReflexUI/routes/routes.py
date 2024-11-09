@@ -89,6 +89,7 @@ class Routes:
             {
                 "name":"Buttons",
                 "path": "/pantry/buttons",
+                "is_new": True,
                 "dir": "buttons",
             },
             {
