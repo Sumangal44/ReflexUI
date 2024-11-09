@@ -60,7 +60,7 @@ BASE_PATH: str = "https://github.com/Sumangal44/ReflexUI/blob/master/ReflexUI/pa
 
 
 def get_source(directory: str, filename: str):
-    with open(os.path.join("ReflexUI", "pantry", directory, filename), "r" ) as file:
+    with open(os.path.join("ReflexUI", "pantry", directory, filename), "r" , encoding="utf-8" , errors="ignore" )as file:
         return file.read()
 
 
