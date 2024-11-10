@@ -2,7 +2,7 @@ import reflex as rx
 
 def button_v1():
     return rx.button(
-        rx.text("Button 1"),
+        rx.text("Click Me"),
         color_scheme="blue",
         variant="soft",
         cursor="pointer",
