@@ -16,7 +16,7 @@ Visit the [Charts](https://reflex-ui.reflex.run/charts/area-charts/) section to 
 
 ## Interactive Apps
 
-Visit the [Interactive Apps](https://reflex-ui.reflex.run//interactive/retrieval-augmented-generation/) section to view the available interactive apps (A.I., Chatbots, etc..). 
+Visit the [Interactive Apps](https://reflex-ui.reflex.run/interactive/retrieval-augmented-generation/) section to view the available interactive apps (A.I., Chatbots, etc..). 
 
 ## Contributing
 
