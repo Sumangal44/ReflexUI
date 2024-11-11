@@ -23,7 +23,7 @@ def reflexui():
         rx.vstack(
             text_wrapper(
                 "What is ReflexUI?",
-                "Buridan refers to Jean Buridan, a 14th-century French philosopher known for his influential ideas in logic and ethics. One of his most famous thought experiments is the 'Buridan's Ass' paradox, which illustrates the challenges of decision-making in the face of equally appealing choices.",
+                "ReflexUI refers to ui components created by reflex. It's a collection of user interface components that are designed to simplify the decision-making process when it comes to designing and building user interfaces. One of his most famous thought experiments is the 'indian' paradox, which illustrates the challenges of decision-making in the face of equally appealing choices.",
             ),
             text_wrapper(
                 "Why ReflexUI?",

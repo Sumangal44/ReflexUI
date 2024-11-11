@@ -45,6 +45,7 @@ from .animations.v5 import animation_v5
 from .prompts.v1 import prompt_v1
 from .prompts.v2 import prompt_v2
 from .buttons.v1 import button_v1
+from .buttons.v2 import button_v2
 
 from .cards.v1 import card_v1
 from .cards.v2 import card_v2
@@ -137,5 +138,6 @@ pantry_exports_config = {
     ],
     "buttons": [
         create_export(button_v1, "buttons", 1),
+        create_export(button_v2, "buttons", 2),
     ],
 }
