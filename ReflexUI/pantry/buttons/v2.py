@@ -4,11 +4,11 @@ def button_v2():
     return rx.button(
         rx.text("Click Me"),
         variant="ghost",
+        width="90%",
         color_scheme="red",
         cursor="pointer",
-        width="100%",
         height="40px",
-        border_radius="8px",
+        border_radius="10px",
         padding="8px 16px",
         spacing="0",
         justify="center",
