@@ -29,7 +29,7 @@ def login_button(name: str, *args, **kwargs) -> rx.button:
     return rx.button(*args, name, **kwargs, **LoginStyle.LoginButton)
 
 def logins_v3():
-    return rx.div(
+    return rx.vstack(
         rx.vstack(
             rx.heading("Create an account", size="5", weight="bold"),
             rx.text(
@@ -43,8 +43,8 @@ def logins_v3():
             align="center",
         ),
         rx.hstack(
-            login_button("GitHub", rx.icon(tag="github", size=15)),
-            login_button("Mail", rx.icon(tag="mail", size=15)),
+            login_button("facebook", rx.icon(tag="facebook", size=15)),
+            login_button("Apple", rx.icon(tag="apple", size=15)),
             width="100%",
         ),
         rx.hstack(
