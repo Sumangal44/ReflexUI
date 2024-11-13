@@ -99,6 +99,18 @@ def changelog():
         rx.box(            
             rx.vstack(
                 wrapper(
+                    "ReflexUI v2.2.4 Release Deployed to Pantry",
+                    "November 13, 2024",
+                    [
+                        info("New Buttons component added",),
+                        info("New Hero component added",),
+                        info("fix navigation issues",),
+                        info("add new hero svg ",),
+                        info("add new buttons svg",),
+                        changelog_badge("party-popper", "ReflexUI v2.2.4"),
+                    ]
+                ),
+                wrapper(
                     "ReflexUI v2.1.3 Release Deployed to Pantry",
                     "November 11, 2024",
                     [
