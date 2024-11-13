@@ -3,6 +3,7 @@ from random import randint
 
 from .logins.v1 import logins_v1
 from .logins.v2 import logins_v2
+from .logins.v3 import logins_v3
 
 from .tables.v1 import tables_v1
 from .tables.v2 import tables_v2
@@ -80,6 +81,7 @@ pantry_exports_config = {
     "logins": [
         create_export(logins_v1, "logins", 1),
         create_export(logins_v2, "logins", 2),
+        create_export(logins_v3, "logins", 3),
     ],
     "tables": [
         create_export(tables_v1, "tables", 1),
