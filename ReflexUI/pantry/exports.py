@@ -11,6 +11,8 @@ from .tables.v3 import tables_v3
 
 from .menus.v1 import menus_v1
 
+from .hero.v1 import hero_v1
+
 from .backgrounds.v1 import background_v1
 from .backgrounds.v2 import background_v2
 from .backgrounds.v3 import background_v3
@@ -142,4 +144,8 @@ pantry_exports_config = {
         create_export(button_v1, "buttons", 1),
         create_export(button_v2, "buttons", 2),
     ],
+    "hero":[
+        create_export(hero_v1, "hero", 1),
+    ]
+
 }
