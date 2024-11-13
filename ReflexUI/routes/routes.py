@@ -97,7 +97,7 @@ class Routes:
                 "path": "/pantry/hero",
                 "is_new": True,
                 "dir": "hero",
-            }
+            },
             {
                 "name": "Backgrounds",
                 "path": "/pantry/backgrounds",
