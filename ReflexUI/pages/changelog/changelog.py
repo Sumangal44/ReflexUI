@@ -96,8 +96,38 @@ def create_link(name: str, path: str):
 
 def changelog():
     return rx.vstack(
-        rx.box(
+        rx.box(            
             rx.vstack(
+                wrapper(
+                    "ReflexUI v2.1.3 Release Deployed to Pantry",
+                    "November 11, 2024",
+                    [
+                        info("updated changelog",),
+                        changelog_badge("party-popper", "ReflexUI v2.1.3"),
+                    ]
+                ),
+                wrapper(
+                    "ReflexUI v2.1.2 Release Deployed to Pantry",
+                    "November 11, 2024",
+                    [
+                        info("Buttons svg added"), 
+                        info("New Color added",),
+                        info("New Buttons component added",),
+                        changelog_badge("party-popper", "ReflexUI v2.1.2"),
+                    ]
+                ),
+                wrapper(
+                    "ReflexUI v2.1.1 Release Deployed to Pantry",
+                    "November 11, 2024",
+                    [
+                        info("Nevigation new color added",),
+                        info("New Buttons component added",),
+                        changelog_badge("party-popper", "ReflexUI v2.1.1"),
+                    ]
+
+                ),
+
+
                 wrapper(
                     "ReflexUI v2.0.0 Release Deployed to Reflex",
                    "November 9, 2024",
