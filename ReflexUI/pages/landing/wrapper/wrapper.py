@@ -52,7 +52,7 @@ def landing_page_section_wrapper_main(
                 landing_page_main_button(
                     "Explore Pantry Items",
                     "outline",
-                    on_click=rx.redirect("/pantry/animation"),
+                    on_click=rx.redirect("/pantry/animations"),
                 ),
             ),
             **LandingPageSectionWrapperStyle.titles,
