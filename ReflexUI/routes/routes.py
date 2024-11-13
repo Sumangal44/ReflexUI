@@ -93,6 +93,12 @@ class Routes:
                 "dir": "buttons",
             },
             {
+                "name":"Hero",
+                "path": "/pantry/hero",
+                "is_new": True,
+                "dir": "hero",
+            }
+            {
                 "name": "Backgrounds",
                 "path": "/pantry/backgrounds",
                 "dir": "backgrounds",
