@@ -153,12 +153,12 @@ class Routes:
                 "path": "/pantry/footers",
                 "dir": "footers",
             },
-            {
-                "name": "Inputs",
-                "path": "/pantry/inputs",
-                "dir": "inputs",
-                "is_new": True,
-            }
+            # {
+            #     "name": "Inputs",
+            #     "path": "/pantry/inputs",
+            #     "dir": "inputs",
+            #     "is_new": True,
+            # }
         ]
     )
 

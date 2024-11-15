@@ -1,4 +1,4 @@
-from typing import Literal
+from typing import Literal, Callable
 
 import reflex as rx
 from  ....states.routing import SiteRoutingState 
@@ -9,8 +9,18 @@ ButtonStyle = Literal["classic", "ghost", "outline", "soft", "solid", "surface"]
 
 keyDisplay = ["none" if i <= 2 else "flex" for i in range(6)]
 
-button:callable[[str,str, ButtonStyle,callable], rx.call_script] = (
-    lambda tag,name,style,func: rx.button(
+button: Callable[[str, str, ButtonStyle, callable], rx.Component] = (
+    lambda tag, name, style, func: rx.button(
+        rx.icon(tag=tag, size=18),
+        rx.text(name, size="2", weight="bold"),
+        on_click=func,
+        variant=style,
+        **LandingPageButtons.base,
+    )
+)
+
+button_with_key: Callable[[str, str, str, ButtonStyle, callable], rx.Component] = (
+    lambda tag, cmd, name, style, func: rx.button(
         rx.icon(tag=tag, size=18),
         rx.text(name, size="2", weight="bold"),
         rx.badge(
@@ -18,15 +28,15 @@ button:callable[[str,str, ButtonStyle,callable], rx.call_script] = (
             width="20px",
             height="20px",
             variant="soft",
-            box_shadow="0px 2px 8px 2px rgba(0, 0, 0, 0.25)",
-            display = keyDisplay,
+            box_shadow="0px 2px 8px 0px rgba(0, 0, 0, 0.25)",
+            display=KeyDisplay,
         ),
         on_click=func,
         variant=style,
-        **LandingPageButtons.button
-                
+        **LandingPageButtons.base,
     )
 )
+
 # def landing_page_main_button(name: str, style: ButtonStyle, **kwargs) -> rx.button:
 #     return rx.button(name, variant=style, cursor="pointer", **kwargs)
 
