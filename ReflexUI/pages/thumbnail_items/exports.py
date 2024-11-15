@@ -58,6 +58,7 @@ NORMALIZATION_MAP = {
     "Footers": "footers",
     "Buttons": "buttons",
     "Hero": "hero",
+    "Inputs":"inputs",
 }
 
 

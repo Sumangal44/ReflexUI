@@ -31,17 +31,26 @@ def navigation_right_side_items():
         ),
         rx.divider(
             orientation="vertical",
-            height="20px",
+            height="30px",
+            width="0.75px",
+            color_scheme="gray",
             color=rx.color("slate", 12),
+            margin="0em,0.5em",
             display=["none", "none", "none", "none", "none", "flex"],
         ),
+        rx.hstack(
         rx.link(
-            rx.icon(tag="github", size=16, color=rx.color("slate", 12)),
+            rx.icon(tag="github", size=16, color=rx.color("slate", 12), fill = rx.color("slate", 12)
+                    ),
             href="https://github.com/sumangal44/ReflexUI",
             is_external=True,
             display=["none", "none", "none", "none", "none", "flex"],
         ),
-        rx.color_mode.switch(),
+        rx.color_mode.switch(size="1"),
+        align="center",
+
+        ),
+    
         rx.button(
             rx.icon(tag="align-justify", size=15),
             on_click=DrawerState.toggle_drawer,

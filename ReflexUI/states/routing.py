@@ -56,6 +56,7 @@ class SiteRoutingState(rx.State):
             # If no result matches, update the NavigationRoutes
             if all(result is None for result in results):
                 await self.update_navigation_route()
+                return rx.redirect(data["path"])
 
     async def update_menu_link(
         self,
