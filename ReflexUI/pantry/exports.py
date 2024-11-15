@@ -25,11 +25,17 @@ from .forms.v2 import forms_v2
 from .forms.v3 import forms_v3
 
 from .featured.v1 import featured_v1
+from .featured.v2 import featured_v2
 
 from .lists.v1 import lists_v1
 
 from .timeline.v1 import timeline_v1
 # from .timeline.v2 import timeline_v2
+
+from .inputs.v1 import inputs_v1
+from .inputs.v2 import inputs_v2
+from .inputs.v3 import inputs_v3
+from .inputs.v4 import inputs_v4
 
 
 from .onboardings.v1 import onboardings_v1
@@ -103,7 +109,8 @@ pantry_exports_config = {
         create_export(forms_v2, "forms", 2),
         create_export(forms_v3, "forms", 3),
     ],
-    "featured": [create_export(featured_v1, "featured", 1),],
+    "featured": [create_export(featured_v1, "featured", 1),
+                create_export(featured_v2, "featured", 2)],
     "lists": [create_export(lists_v1, "lists", 1)],
     "timeline": [create_export(timeline_v1, "timeline", 1),
                 # create_export(timeline_v2, "timeline", 2),
@@ -146,6 +153,13 @@ pantry_exports_config = {
     ],
     "hero":[
         create_export(hero_v1, "hero", 1),
-    ]
+    ],
+    "inputs":[
+        create_export(input_v1, "inputs", 1),
+        create_export(input_v2, "inputs", 2),
+        create_export(input_v3, "inputs", 3),
+        create_export(input_v4, "inputs", 4),
+
+        ],
 
 }

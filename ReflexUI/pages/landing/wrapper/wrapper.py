@@ -1,14 +1,34 @@
 from typing import Literal
 
 import reflex as rx
+from  ....states.routing import SiteRoutingState 
 
-from .style import LandingPageSectionWrapperStyle
+from .style import LandingPageSectionWrapperStyle , LandingPageButtons
 
 ButtonStyle = Literal["classic", "ghost", "outline", "soft", "solid", "surface"]
 
+keyDisplay = ["none" if i <= 2 else "flex" for i in range(6)]
 
-def landing_page_main_button(name: str, style: ButtonStyle, **kwargs) -> rx.button:
-    return rx.button(name, variant=style, cursor="pointer", **kwargs)
+button:callable[[str,str, ButtonStyle,callable], rx.call_script] = (
+    lambda tag,name,style,func: rx.button(
+        rx.icon(tag=tag, size=18),
+        rx.text(name, size="2", weight="bold"),
+        rx.badge(
+            rx.text(cmd),
+            width="20px",
+            height="20px",
+            variant="soft",
+            box_shadow="0px 2px 8px 2px rgba(0, 0, 0, 0.25)",
+            display = keyDisplay,
+        ),
+        on_click=func,
+        variant=style,
+        **LandingPageButtons.button
+                
+    )
+)
+# def landing_page_main_button(name: str, style: ButtonStyle, **kwargs) -> rx.button:
+#     return rx.button(name, variant=style, cursor="pointer", **kwargs)
 
 
 def landing_page_section_wrapper(
@@ -26,13 +46,12 @@ def landing_page_section_wrapper(
             rx.heading(title, font_weight="900", size="8"),
             rx.text(subtitle),
             rx.link(link, href=path),
-            **LandingPageSectionWrapperStyle.titles,
+            **LandingPageSectionWrapperStyle.titles_secondary,
         ),
         *components,
         # ... wrapper style
-        **LandingPageSectionWrapperStyle.wrapper,
+        **LandingPageSectionWrapperStyle.wrapper_secondary,
     )
-
 
 def landing_page_section_wrapper_main(
     badge: str, title: str, subtitle: str
@@ -44,17 +63,22 @@ def landing_page_section_wrapper_main(
             rx.heading(title, font_weight="900", size="9"),
             rx.text(subtitle),
             rx.hstack(
-                landing_page_main_button(
-                    "Getting Started",
+                button(
+                    "component",
+                    "Explore Pantry",
                     "solid",
-                    on_click=rx.redirect("/getting-started/introduction"),
-                ),
-                landing_page_main_button(
-                    "Explore Pantry Items",
-                    "outline",
-                    on_click=rx.redirect("/pantry/animations"),
+                    SiteRoutingState.toggle_page_change({"name": "Animations", "path": "/pantry/animations"})
+                    
+                )
+                ,
+                button(
+                    "component",
+                    "Get Started",
+                    "solid",
+                    SiteRoutingState.toggle_page_change({"name": "Getting Started", "path": "/getting-started/introduction"})
                 ),
             ),
+
             **LandingPageSectionWrapperStyle.titles,
         ),
         # ... wrapper style
@@ -66,7 +90,7 @@ def landing_page_section_wrapper_main(
 def blip(tag: str) -> rx.box:
     return rx.box(
         rx.icon(tag=tag, size=12),
-        **LandingPageSectionWrapperStyle.blip,
+        **LandingPageSectionWrapperStyle.blip
     )
 
 
