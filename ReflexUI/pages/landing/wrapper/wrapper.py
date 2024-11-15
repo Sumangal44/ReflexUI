@@ -29,7 +29,6 @@ button_with_key: Callable[[str, str, str, ButtonStyle, callable], rx.Component] 
             height="20px",
             variant="soft",
             box_shadow="0px 2px 8px 0px rgba(0, 0, 0, 0.25)",
-            display=KeyDisplay,
         ),
         on_click=func,
         variant=style,
