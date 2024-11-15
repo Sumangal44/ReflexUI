@@ -10,10 +10,10 @@ class CreditBannerStyle:
             "width": "100%",
             "justify": "center",
             "wrap": "wrap",
-            "bg": rx.color("state", 12),
+            "bg": rx.color("slate",3),
             "padding": "14px",
-            "border_top": f"1.5px solid {rx.color('state')}",
-            "border_bottom": f"1.5px solid {rx.color('state')}",
+            "border_top": f"1.5px solid {rx.color('slate')}",
+            "border_bottom": f"1.5px solid {rx.color('slate')}",
         }
     )
 
