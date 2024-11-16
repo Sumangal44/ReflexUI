@@ -17,27 +17,34 @@ AppFontURL: str = (
 
 app = rx.App(
     stylesheets=[AppFontURL],
-    style={rx.heading: {"font_family": "Inter"}, rx.text: {"font_family": "Inter"}},
+    style={
+        "background": "transparent",
+        rx.heading: {"font_family": "inter"},
+        rx.text: {"font_family": "inter"},
+    },
 )
 
 
-def get_exports(directory, config_file):
+def get_exports(directory: str, config_file: dict[str, list[callable]]):
     return [export() for export in config_file[directory]]
 
 
-def add_routes(routes, export_config):
+def add_routes(
+    routes: list[dict[str, str]],
+    export_config: dict[str, list[callable]],
+):
     for route in routes:
 
         @base(route["path"], route["name"])
         def export_page() -> callable:
             if route["name"] == "Standard Tables":
-                return get_exports(route["dir"], export_config)[:1]
-            elif route["name"] == "Table Pagination":
                 return get_exports(route["dir"], export_config)[1:]
+            elif route["name"] == "Table Pagination":
+                return get_exports(route["dir"], export_config)[:1]
             return get_exports(route["dir"], export_config)
 
         app.add_page(
-            export_page(), route=route["path"], title=f"{route['name']} - Reflex UI"
+            export_page(), route=route["path"], title=f"{route['name']} - ReflexUI"
         )
 
 
@@ -46,11 +53,11 @@ def add_routes(routes, export_config):
 DEV: bool = False
 
 if DEV:
-
+    # ... ex: working with X item Y -> set the ENV data as such:
     ENV = {
-        "path": "/pantry/footers/",
-        "name": "Footers",
-        "dir": "footers",
+        "path": "/pantry/featured",
+        "name": "",
+        "dir": "featured",
         "config": pantry_exports_config,
     }
 
@@ -58,12 +65,11 @@ if DEV:
     def __() -> callable:
         return [export() for export in ENV["config"][ENV["dir"]]]
 
-    app.add_page(landing_page(), route="/", title="Reflex UI")
-    app.add_page(__(), route=ENV["path"], title=f"{ENV['name']} - Reflex UI")
-
+    app.add_page(landing_page(), route="/", title="ReflexUI")
+    app.add_page(__(), route=ENV["path"], title=f"{ENV['name']} - ReflexUI")
 
 else:
-    app.add_page(landing_page(), route="/", title="Reflex UI")
+    app.add_page(landing_page(), route="/", title="ReflexUI")
     add_routes(Routes.interactive, interactive_config)
     add_routes(Routes.pantries, pantry_exports_config)
     add_routes(Routes.charts, charts_exports_config)

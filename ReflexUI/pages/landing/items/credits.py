@@ -38,7 +38,7 @@ credit_banner: Callable[[], rx.Component] = lambda: rx.hstack(
         ", ",
         link("@shadcn/ui", "https://ui.shadcn.com/"),
         " and other amazing open-source projects for the inspiration!",
-        color_scheme="blue",
+        color_scheme="purple",
         size="1",
         align="center",
     ),

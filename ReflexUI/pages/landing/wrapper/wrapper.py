@@ -6,11 +6,11 @@ from  ....states.routing import SiteRoutingState
 from .style import LandingPageSectionWrapperStyle , LandingPageButtons
 
 ButtonStyle = Literal["classic", "ghost", "outline", "soft", "solid", "surface"]
-
-keyDisplay = ["none" if i <= 2 else "flex" for i in range(6)]
+color_scheme= Literal['amber', 'blue', 'bronze', 'brown', 'crimson', 'cyan', 'gold', 'grass', 'gray', 'green', 'indigo', 'iris', 'jade', 'lime', 'mint', 'orange', 'pink', 'plum', 'purple', 'red', 'ruby', 'sky', 'teal', 'tomato', 'violet', 'yellow']
+KeyDisplay = ["none" if i <= 2 else "flex" for i in range(6)]
 
 button: Callable[[str, str, ButtonStyle, callable], rx.Component] = (
-    lambda tag, name, style, func: rx.button(
+    lambda tag,name,style,func: rx.button(
         rx.icon(tag=tag, size=18),
         rx.text(name, size="2", weight="bold"),
         on_click=func,
@@ -29,6 +29,7 @@ button_with_key: Callable[[str, str, str, ButtonStyle, callable], rx.Component] 
             height="20px",
             variant="soft",
             box_shadow="0px 2px 8px 0px rgba(0, 0, 0, 0.25)",
+            display = KeyDisplay,
         ),
         on_click=func,
         variant=style,
@@ -80,14 +81,21 @@ def landing_page_section_wrapper_main(
                     
                 )
                 ,
-                button(
-                    "component",
-                    "Get Started",
-                    "solid",
-                    SiteRoutingState.toggle_page_change({"name": "Getting Started", "path": "/getting-started/introduction"})
+                button_with_key(
+                    "github",
+                    "c",
+                    "View on GitHub",
+                    "surface",
+                    rx.redirect("https://github.com/sumangal44/ReflexUI"),
                 ),
-            ),
 
+                    width="100%",
+                    max_width="30em",
+                    display = "grid",
+                    grid_template_columns=[
+                        f"repeat(2, minmax(0, 1fr))" for i in [1,1,2,2,2,2]
+                    ],
+            ),
             **LandingPageSectionWrapperStyle.titles,
         ),
         # ... wrapper style
