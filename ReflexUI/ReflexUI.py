@@ -22,9 +22,6 @@ app = rx.App(
         rx.heading: {"font_family": "inter"},
         rx.text: {"font_family": "inter"},
     },
-    theme=rx.theme(
-        scaling="95%",accent_color="blue",
-    )
     )
 
 
