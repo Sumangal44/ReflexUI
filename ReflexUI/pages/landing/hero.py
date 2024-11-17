@@ -37,11 +37,8 @@ def count_python_files_in_folder(folder_name):
 def create_landing_background(top: str, left: str):
     return rx.box(
         background_size="32px 32px",
-        background_image=f"radial-gradient(circle, {rx.color('slate', 12)} 0.75px, transparent 1px)",
-        mask=(
-            "radial-gradient(45% 45% at 50% 50%, hsl(0, 0%, 0%, 0.60), hsl(0, 0%, 0%, 0)), "
-            "radial-gradient(60% 70% at 50% 50%, hsl(0, 0%, 0%, 0.35), hsl(0, 0%, 0%, 0))"
-        ),
+        background_image="linear-gradient(hsl(0, 0%, 39%) 1px, transparent 1px), linear-gradient(to right, transparent 99%, hsl(0, 0%, 39%) 100%)",
+        mask="radial-gradient(50% 100% at 50% 50%, hsl(0, 0%, 0%, 1), hsl(0, 0%, 0%, 0))",    
         width="100%",
         height="100vh",
         position="absolute",

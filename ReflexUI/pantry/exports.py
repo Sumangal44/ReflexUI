@@ -32,10 +32,10 @@ from .lists.v1 import lists_v1
 from .timeline.v1 import timeline_v1
 # from .timeline.v2 import timeline_v2
 
-# from .inputs.v1 import inputs_v1
-# from .inputs.v2 import inputs_v2
-# from .inputs.v3 import inputs_v3
-# from .inputs.v4 import inputs_v4
+from .inputs.v1 import inputs_v1
+from .inputs.v2 import inputs_v2
+from .inputs.v3 import inputs_v3
+from .inputs.v4 import inputs_v4
 
 
 from .onboardings.v1 import onboardings_v1
@@ -50,6 +50,7 @@ from .animations.v2 import animation_v2
 from .animations.v3 import animation_v3
 from .animations.v4 import animation_v4
 from .animations.v5 import animation_v5
+from .animations.v6 import animation_v6
 
 from .prompts.v1 import prompt_v1
 from .prompts.v2 import prompt_v2
@@ -127,6 +128,7 @@ pantry_exports_config = {
         create_export(animation_v3, "animations", 3),
         create_export(animation_v4, "animations", 4),
         create_export(animation_v5, "animations", 5),
+        create_export(animation_v6, "animations", 6),
     ],
     "prompts": [
         create_export(prompt_v1, "prompts", 1),
@@ -154,12 +156,10 @@ pantry_exports_config = {
     "hero":[
         create_export(hero_v1, "hero", 1),
     ],
-    # "inputs":[
-    #     create_export(input_v1, "inputs", 1),
-    #     create_export(input_v2, "inputs", 2),
-    #     create_export(input_v3, "inputs", 3),
-    #     create_export(input_v4, "inputs", 4),
-
-    #     ],
-
+"inputs":[
+    create_export(inputs_v1, "inputs", 1),
+    create_export(inputs_v2, "inputs", 2),
+    create_export(inputs_v3, "inputs", 3),
+    create_export(inputs_v4, "inputs", 4),
+],
 }
