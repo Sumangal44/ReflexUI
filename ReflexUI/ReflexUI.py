@@ -22,7 +22,10 @@ app = rx.App(
         rx.heading: {"font_family": "inter"},
         rx.text: {"font_family": "inter"},
     },
-)
+    theme=rx.Theme(
+        scaling="95%",accent_color="blue",
+    )
+    )
 
 
 def get_exports(directory: str, config_file: dict[str, list[callable]]):

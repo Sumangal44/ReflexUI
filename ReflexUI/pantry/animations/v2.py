@@ -68,3 +68,4 @@ def animation_v2():
         ),
         **Style.base,
     )
+

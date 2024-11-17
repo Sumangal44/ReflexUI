@@ -11,7 +11,8 @@ class ComponentWrapperStyle:
             "overflow": "hidden",
             "default_value": "1",
             "border_radius": "10px",
-            "background": rx.color("gray", 3),
+            "background":"hsla(0, 0%, 10%, 0.1)",
+            
         }
     )
 
@@ -39,14 +40,15 @@ class ComponentWrapperStyle:
     code: dict[str, str] = field(
         default_factory=lambda: {
             "width": "100%",
-            "font_size": "15px",
+            "font_size": "12px",
             "language": "python",
             "wrap_long_lines": True,
             "scrollbar_width": "none",
             "code_tag_props": {"pre": "transparent"},
+            "show_line_numbers": True,
             "custom_style": {
-                "backgroundColor": "transparent",
-            },
+                "backgroundColor": "hsla(0, 0%, 10%, 0.1)",
+        },
         }
     )
 

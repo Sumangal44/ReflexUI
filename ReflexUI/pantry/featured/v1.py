@@ -1,6 +1,5 @@
 import reflex as rx
 
-
 data = [
     {
         "image": "auditors",
@@ -34,10 +33,8 @@ def create_featured(title: str, description: str):
             border_radius="10px",
         ),
         rx.vstack(
-            rx.text(title, font_size="14px", weight="bold"),
-            rx.text(
-                description, font_size="11px", weight="medium", color_scheme="gray"
-            ),
+            rx.text(title, size="2", weight="bold"),
+            rx.text(description, size="1", weight="medium", color_scheme="gray"),
             spacing="1",
             width=["90%" if i <= 1 else "60%" for i in range(6)],
         ),
@@ -49,18 +46,12 @@ def create_featured(title: str, description: str):
 def featured_v1():
     return rx.vstack(
         rx.heading(
-            "USE CASES", size="1", color=rx.color("slate", 12), padding="12px 0px"
-        ),
-        rx.heading(
             "PharmLand is not just for Doctors",
             size="4",
             color=rx.color("slate", 12),
-            text_align="center",
         ),
         rx.text(
             "Its lungs contain an organ that creates electricity. The crackling sound of electricity can be heard when it exhales. Azurill’s tail is large and bouncy. It is packed full of the nutrients this Pokémon needs to grow.",
-            text_align="center",
-            font_size="11px",
             color=rx.color("slate", 11),
         ),
         rx.hstack(
@@ -85,5 +76,5 @@ def featured_v1():
         max_width="35em",
         display="flex",
         justify="center",
-        align="center",
+        align="start",
     )
