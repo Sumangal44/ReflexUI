@@ -15,7 +15,7 @@ def menu_wrapper(title: str, tag: str, components: list[rx.Component] = []):
         rx.vstack(
             rx.vstack(
                 rx.hstack(
-                    blip(tag),
+                    # blip(tag),
                     rx.text(
                         title, size="1", weight="bold", color=rx.color("slate", 11)
                     ),
@@ -41,7 +41,7 @@ def base_header_wrapper(
         rx.vstack(
             path_name,
             rx.heading(title, font_weight="900", size="9"),
-            rx.link(link, href=path,size="1"),
+            rx.link(link, href=path, size="1"),
             **BaseHeaderWrapper.titles,
         ),
         # ... wrapper style
