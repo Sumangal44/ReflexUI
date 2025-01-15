@@ -37,6 +37,7 @@ credit_banner: Callable[[], rx.Component] = lambda: rx.hstack(
         link("@unDraw", "https://undraw.co"),
         ", ",
         link("@shadcn/ui", "https://ui.shadcn.com/"),
+        ", ",
         link("@buridan-ui", "https://buridan-ui.reflex.run/"),
         " and other amazing open-source projects for the inspiration!",
         color_scheme="gray",
