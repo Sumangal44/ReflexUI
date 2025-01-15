@@ -1,4 +1,5 @@
 from dataclasses import dataclass, field
+import reflex as rx
 
 
 @dataclass
@@ -9,6 +10,7 @@ class LandingPageStyle:
             "min_height": "100vh",
             "align": "center",
             "spacing": "0",
+            "background": rx.color("slate",2),
         }
     )
 

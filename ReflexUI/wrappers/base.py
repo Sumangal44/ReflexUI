@@ -6,7 +6,7 @@ import reflex as rx
 from .style import BaseWrapperStyle
 
 from .utils.routes import base_content_path_ui
-from .utils.navigation import pantry_in_page_navigation, charts_in_page_navigation
+from .utils.navigation import uis_in_page_navigation, charts_in_page_navigation
 
 from ..templates.sidemenu.sidemenu import sidemenu
 from ..templates.footer.footer import footer, desktop_footer
@@ -51,7 +51,7 @@ def base(url: str, page_name: str, **kwargs):
                             align="center",
                             **BaseWrapperStyle.content,
                         ),
-                        pantry_in_page_navigation(url),
+                        uis_in_page_navigation(url),
                         charts_in_page_navigation(url),
                         rx.vstack(
                             base_footer_responsive(desktop_footer(), "none", "flex"),

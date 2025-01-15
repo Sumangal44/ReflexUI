@@ -81,9 +81,9 @@ def sidemenu() -> rx.vstack:
                 [create_sidebar_menu_items(SiteRoutingState.ChartRoutes)],
             ),
             menu_wrapper(
-                "Pantry Components",
+                "UI Components",
                 "component",
-                [create_sidebar_menu_items(SiteRoutingState.PantryRoutes)],
+                [create_sidebar_menu_items(SiteRoutingState.uisRoutes)],
             ),
             **SideMenuStyle.content,
         ),

@@ -5,7 +5,7 @@ from typing import Dict, List
 from ..routes.routes import (
     GettingStartedRoutes,
     InteractiveRoutes,
-    PantryRoutes,
+    uisRoutes,
     ChartRoutes,
     ResourcesRoutes,
     NavigationRoutes,
@@ -17,7 +17,7 @@ active: Dict[str, str] = {
     "background": rx.color("blue", 3),
 }
 passive: Dict[str, str] = {
-    "border_left": f"1px solid {rx.color('gray', 6)}",
+    "border_left": f"1px solid {rx.color('slate', 11)}",
     "background": "none",
 }
 
@@ -33,8 +33,8 @@ class SiteRoutingState(rx.State):
         {**route, **passive} for route in InteractiveRoutes
     ]
     ChartRoutes: List[Dict[str, str]] = [{**route, **passive} for route in ChartRoutes]
-    PantryRoutes: List[Dict[str, str]] = [
-        {**route, **passive} for route in PantryRoutes
+    uisRoutes: List[Dict[str, str]] = [
+        {**route, **passive} for route in uisRoutes
     ]
     ResourcesRoutes: List[Dict[str, str]] = [
         {**route, **passive} for route in ResourcesRoutes
@@ -63,7 +63,7 @@ class SiteRoutingState(rx.State):
                 self.update_menu_link(self.GettingStartedRoutes, data),
                 self.update_menu_link(self.InteractiveRoutes, data),
                 self.update_menu_link(self.ChartRoutes, data),
-                self.update_menu_link(self.PantryRoutes, data),
+                self.update_menu_link(self.uisRoutes, data),
             )
 
             # If no result matches, update the NavigationRoutes

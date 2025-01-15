@@ -44,13 +44,13 @@ def footer():
             "Interactive Applications", SiteRoutingState.InteractiveRoutes
         ),
         create_footer_item("Charts UI", SiteRoutingState.ChartRoutes),
-        create_footer_item("Pantry UI", SiteRoutingState.PantryRoutes),
+        create_footer_item("UIs", SiteRoutingState.uisRoutes),
         create_footer_item("Resources", SiteRoutingState.ResourcesRoutes),
         rx.divider(height="2em", opacity="0"),
         rx.vstack(
-            rx.heading("buridan/ui", size="3", font_weight="900"),
+            rx.heading("ReflexUI", size="3", font_weight="900"),
             rx.text(
-                "© 2024 Ahmad Hakim. All rights reserved.",
+                "© 2024 chaseme24 & sumangal44. All rights reserved.",
                 size="1",
                 weight="bold",
                 color=rx.color("gray", 11),
@@ -65,9 +65,9 @@ def footer():
 def desktop_footer():
     return rx.vstack(
         rx.vstack(
-            rx.heading("buridan/ui", size="3", font_weight="900"),
+            rx.heading("ReflexUI", size="3", font_weight="900"),
             rx.text(
-                "© 2024 Ahmad Hakim. All rights reserved.",
+                "© 2024 chaseme24 & sumangal44. All rights reserved.",
                 size="1",
                 weight="bold",
                 color=rx.color("gray", 11),

@@ -4,7 +4,7 @@ from .wrappers.base import base
 
 from .routes.routes import Routes
 
-from .ui.exports import pantry_exports_config
+from .ui.exports import ui_exports_config
 from .charts.exports import charts_exports_config
 from .pages.started_items.exports import getting_started_config
 from .pages.interactive.exports import interactive_config
@@ -72,6 +72,6 @@ if DEV:
 else:
     app.add_page(landing_page(), route="/", title="Reflex UI")
     add_routes(Routes.interactive, interactive_config)
-    add_routes(Routes.pantries, pantry_exports_config)
+    add_routes(Routes.uis, ui_exports_config)
     add_routes(Routes.charts, charts_exports_config)
     add_routes(Routes.started, getting_started_config)

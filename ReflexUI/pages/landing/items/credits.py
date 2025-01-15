@@ -11,9 +11,9 @@ class CreditBannerStyle:
             "justify": "center",
             "wrap": "wrap",
             "padding": "0.5em",
-            "bg": rx.color("blue", 3),
-            "border_top": f"1.5px solid {rx.color('blue')}",
-            "border_bottom": f"1.5px solid {rx.color('blue')}",
+            "bg": rx.color("slate", 3),
+            "border_top": f"1.5px solid {rx.color('slate')}",
+            "border_bottom": f"1.5px solid {rx.color('slate')}",
         }
     )
 
@@ -37,8 +37,9 @@ credit_banner: Callable[[], rx.Component] = lambda: rx.hstack(
         link("@unDraw", "https://undraw.co"),
         ", ",
         link("@shadcn/ui", "https://ui.shadcn.com/"),
+        link("@buridan-ui", "https://buridan-ui.reflex.run/"),
         " and other amazing open-source projects for the inspiration!",
-        color_scheme="blue",
+        color_scheme="gray",
         size="1",
         align="center",
     ),

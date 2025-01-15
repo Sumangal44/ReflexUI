@@ -78,7 +78,7 @@ def create_export(func, directory, version):
     return export
 
 
-pantry_exports_config = {
+ui_exports_config = {
     "logins": [
         create_export(logins_v1, "logins", 1),
         create_export(logins_v2, "logins", 2),

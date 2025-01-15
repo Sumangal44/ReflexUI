@@ -4,7 +4,7 @@ import reflex as rx
 
 from .style import ChangelogStyle
 
-from ...routes.routes import PantryRoutes, ChartRoutes
+from ...routes.routes import uisRoutes, ChartRoutes
 
 info: Callable[[str, any], rx.Component] = lambda txt, *args: rx.text(
     txt, size="2", color=rx.color("slate", 11), *args
@@ -128,13 +128,13 @@ def changelog():
                             "RAG Application",
                             "/intractive/retrieval-augmented-generation",
                         ),
-                        changelog_badge("party-popper", "buridan/ui v0.1.0"),
+                        changelog_badge("party-popper", "ReflexUI v0.1.0"),
                     ],
                 ),
                 wrapper(
                     "New Components and Improvements to Pantry Items",
                     "October 21, 2024",
-                    [create_pantry_links(PantryRoutes)],
+                    [create_pantry_links(uisRoutes)],
                 ),
                 wrapper(
                     "New Library Component: Charts",
@@ -142,10 +142,10 @@ def changelog():
                     [create_pantry_links(ChartRoutes)],
                 ),
                 wrapper(
-                    "buridan/ui v0.0.1 Deployed to Reflex",
+                    "ReflexUI v0.0.1 Deployed to Reflex",
                     "October 16, 2024",
                     [
-                        changelog_badge("party-popper", "buridan/ui v0.0.1"),
+                        changelog_badge("party-popper", "ReflexUI v0.0.1"),
                     ],
                 ),
                 wrapper("Initial Release", "October 5, 2024"),

@@ -1,6 +1,6 @@
 import reflex as rx
 
-from ...routes.routes import PantryRoutes, ChartRoutes
+from ...routes.routes import uisRoutes, ChartRoutes
 from ...states.routing import SiteRoutingState
 
 
@@ -70,8 +70,8 @@ def page_navigation(path: str, routes: list[dict]) -> rx.Component:
     return rx.spacer()
 
 
-def pantry_in_page_navigation(path: str) -> rx.Component:
-    return page_navigation(path, PantryRoutes)
+def uis_in_page_navigation(path: str) -> rx.Component:
+    return page_navigation(path, uisRoutes)
 
 
 def charts_in_page_navigation(path: str) -> rx.Component:

@@ -22,12 +22,12 @@ def ReflexUI():
     return rx.box(
         rx.vstack(
             text_wrapper(
-                "Who is ?",
+                "Who is Chseme24 & sumangal44",
                 "Buridan refers to Jean Buridan, a 14th-century French philosopher known for his influential ideas in logic and ethics. One of his most famous thought experiments is the 'Buridan's Ass' paradox, which illustrates the challenges of decision-making in the face of equally appealing choices.",
             ),
             text_wrapper(
-                "Why Buridan?",
-                "I chose the name 'Buridan UI' to evoke the spirit of thoughtful decision-making in design. Just as Buridan's donkey faced a dilemma between two equally appealing bales of hay, developers often grapple with choices in component design and user experience. This site aims to provide a clear path through those choices by offering beautifully crafted, reusable components that simplify the decision-making process.",
+                "Why ReflexUI?",
+                "I chose the name 'Reflex UI' to evoke the spirit of thoughtful decision-making in design. Just as Buridan's donkey faced a dilemma between two equally appealing bales of hay, developers often grapple with choices in component design and user experience. This site aims to provide a clear path through those choices by offering beautifully crafted, reusable components that simplify the decision-making process.",
             ),
             text_wrapper(
                 "Explore and Create",

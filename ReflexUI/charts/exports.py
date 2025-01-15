@@ -23,11 +23,11 @@ from .pie.v5 import piechart_v5
 
 from ..wrappers.component.wrapper import component_wrapper
 
-BASE_PATH: str = "https://github.com/LineIndent/buridan-ui/blob/main/buridan_ui/charts/"
+BASE_PATH: str = "https://github.com/chaseme24/ReflexUI/blob/master/ReflexUI/charts/"
 
 
 def get_source(directory: str, filename: str) -> str:
-    with open(os.path.join("buridan_ui", "charts", directory, filename), "r") as file:
+    with open(os.path.join("ReflexUI", "charts", directory, filename), "r") as file:
         return file.read()
 
 

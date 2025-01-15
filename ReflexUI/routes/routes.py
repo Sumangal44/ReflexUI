@@ -21,7 +21,7 @@ class Routes:
             {
                 "name": "Who is Buridan?",
                 "path": "/getting-started/who-is-buridan",
-                "dir": "buridan",
+                "dir": "ReflexUI",
             },
             {
                 "name": "Changelog",
@@ -47,7 +47,7 @@ class Routes:
         ]
     )
 
-    pantries: List[Dict[str, str]] = field(
+    uis: List[Dict[str, str]] = field(
         default_factory=lambda: [
             {"name": "Logins", "path": "/ui/logins", "dir": "logins"},
             {
@@ -180,7 +180,7 @@ class NavigationRoutes:
             {"name": "Home", "path": "/"},
             {"name": "Getting Started", "path": GettingStartedRoutes[0]["path"]},
             {"name": "Interactive Apps", "path": InteractiveRoutes[0]["path"]},
-            {"name": "ui", "path": PantryRoutes[0]["path"]},
+            {"name": "ui", "path": uisRoutes[0]["path"]},
             {"name": "Charts", "path": ChartRoutes[0]["path"]},
         ]
     )
@@ -190,7 +190,7 @@ Routes: Routes = Routes()
 
 GettingStartedRoutes: List[Dict[str, str]] = Routes.started
 InteractiveRoutes: List[Dict[str, str]] = Routes.interactive
-PantryRoutes: List[Dict[str, str]] = sorted(Routes.pantries, key=lambda x: x["name"])
+uisRoutes: List[Dict[str, str]] = sorted(Routes.uis, key=lambda x: x["name"])
 ChartRoutes: List[Dict[str, str]] = sorted(Routes.charts, key=lambda x: x["name"])
 ResourcesRoutes: List[Dict[str, str]] = Routes.resources
 

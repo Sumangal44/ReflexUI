@@ -61,9 +61,9 @@ def drawer():
                     drawer_menu_link(
                         create_sidebar_menu_items(SiteRoutingState.ChartRoutes)
                     ),
-                    drawer_menu_header("Pantry", "component"),
+                    drawer_menu_header("uis", "component"),
                     drawer_menu_link(
-                        create_sidebar_menu_items(SiteRoutingState.PantryRoutes)
+                        create_sidebar_menu_items(SiteRoutingState.uisRoutes)
                     ),
                     **DrawerStyle.stack_content,
                 ),
