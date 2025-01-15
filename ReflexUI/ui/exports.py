@@ -62,11 +62,11 @@ from .inputs.v4 import inputs_v4
 
 from ..wrappers.component.wrapper import component_wrapper
 
-BASE_PATH: str = "https://github.com/LineIndent/buridan-ui/blob/main/buridan_ui/pantry/"
+BASE_PATH: str = "https://github.com/chaseme24/ReflexUI/blob/master/ReflexUI/ui/"
 
 
 def get_source(directory: str, filename: str):
-    with open(os.path.join("buridan_ui", "pantry", directory, filename), "r") as file:
+    with open(os.path.join("ReflexUI", "ui", directory, filename), "r") as file:
         return file.read()
 
 

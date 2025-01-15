@@ -18,11 +18,11 @@ def text_wrapper(title: str, description: str):
     )
 
 
-def buridan():
+def ReflexUI():
     return rx.box(
         rx.vstack(
             text_wrapper(
-                "Who is Buridan?",
+                "Who is ?",
                 "Buridan refers to Jean Buridan, a 14th-century French philosopher known for his influential ideas in logic and ethics. One of his most famous thought experiments is the 'Buridan's Ass' paradox, which illustrates the challenges of decision-making in the face of equally appealing choices.",
             ),
             text_wrapper(

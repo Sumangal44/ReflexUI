@@ -124,7 +124,7 @@ text: Callable[[str], rx.Component] = lambda name: rx.text(name, **FooterV1Style
 
 def footer_v1():
     return rx.hstack(
-        company("Brand", "© 2024 Buridan UI."),
+        company("Brand", "© 2024 Reflex UI."),
         stack("Product", footer_data["product"]),
         stack("Company", footer_data["company"]),
         stack("Resources", footer_data["resources"]),

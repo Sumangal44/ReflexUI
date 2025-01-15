@@ -59,7 +59,7 @@ class Animation(rx.State):
 
 def animation_v2():
     return rx.vstack(
-        rx.heading("buridan/ui", size="5", font_weight="900", style=Animation.animate),
+        rx.heading("ReflexUI", size="5", font_weight="900", style=Animation.animate),
         rx.button(
             "Run",
             loading=Animation.is_disabled,

@@ -14,7 +14,7 @@ from .features.feature import feature
 
 from .bindings import key_bindings
 
-from .items.pantry import landing_page_pantry_items
+from .items.ui import landing_page_pantry_items
 from .items.charts import landing_page_chart_items
 from .items.credits import credit_banner
 
@@ -54,7 +54,7 @@ def landing_page() -> rx.vstack:
                 "Full Stack Features",
                 "UI components designed with Reflex, all created using Python",
                 "A full-stack framework complete with built-in features, including a comprehensive theming system, ready-to-use UI components, and customizable elements.",
-                "Get started with buridan/ui →",
+                "Get started with ReflexUI →",
                 "/getting-started/installation",
                 [rx.box(feature(), padding="2em 0em", width="100%")],
             ),
@@ -62,9 +62,9 @@ def landing_page() -> rx.vstack:
             landing_page_section_wrapper(
                 "Pantry Components",
                 "Beautifully crafted UI components, ready for your next project.",
-                f"Over {count_python_files_in_folder('buridan_ui/pantry')}+ professionally designed, fully responsive, expertly crafted UI components you can seamlessly integrate into your Reflex projects and customize as needed.",
+                f"Over {count_python_files_in_folder('ReflexUI/ui')}+ professionally designed, fully responsive, expertly crafted UI components you can seamlessly integrate into your Reflex projects and customize as needed.",
                 "Browse pantry items →",
-                "/pantry/animations",
+                "/ui/animations",
                 [landing_page_pantry_items()],
             ),
             rx.divider(height="2em", opacity="0"),
@@ -73,7 +73,7 @@ def landing_page() -> rx.vstack:
                 rx.link(
                     "View all pantry items now →",
                     on_click=SiteRoutingState.toggle_page_change(
-                        {"name": "Animations", "path": "/pantry/animations"}
+                        {"name": "Animations", "path": "/ui/animations"}
                     ),
                 ),
                 size="2",
@@ -86,14 +86,14 @@ def landing_page() -> rx.vstack:
             landing_page_section_wrapper(
                 "Chart Components",
                 "Powerful charting components, designed to visualize your data effortlessly.",
-                f"Explore {count_python_files_in_folder('buridan_ui/charts')}+ beautifully designed, fully responsive chart components ready to enhance your Reflex projects and visualize your data effectively.",
+                f"Explore {count_python_files_in_folder('ReflexUI/charts')}+ beautifully designed, fully responsive chart components ready to enhance your Reflex projects and visualize your data effectively.",
                 "Browse chart items →",
                 "/charts/area-charts",
                 [landing_page_chart_items()],
             ),
             rx.divider(height="5em", opacity="0"),
             landing_page_section_wrapper(
-                "buridan/ui",
+                "ReflexUI",
                 "Almost there, one click to launch your web application!",
                 "Download and install Reflex to bring your ideas to life, or explore our Getting Started pages for comprehensive guidance and resources.",
                 "",

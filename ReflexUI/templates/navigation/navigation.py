@@ -44,7 +44,7 @@ github = nav_icon(
             size=14,
             color=rx.color("slate", 12),
         ),
-        href="https://github.com/LineIndent/buridan-ui",
+        href="https://github.com/chaseme24/ReflexUI",
         display=["none", "none", "none", "none", "none", "flex"],
     ),
 )
@@ -92,7 +92,7 @@ def navigation_left_side_items():
     return rx.hstack(
         rx.image(src="/logo.jpg", **NavigationStyle.logo),
         rx.heading(
-            "buridan/ui",
+            "ReflexUI",
             font_size="1em",
             font_weight="900",
             cursor="pointer",

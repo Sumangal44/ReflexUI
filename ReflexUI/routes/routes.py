@@ -49,100 +49,100 @@ class Routes:
 
     pantries: List[Dict[str, str]] = field(
         default_factory=lambda: [
-            {"name": "Logins", "path": "/pantry/logins", "dir": "logins"},
+            {"name": "Logins", "path": "/ui/logins", "dir": "logins"},
             {
                 "name": "Standard Forms",
-                "path": "/pantry/standard-forms",
+                "path": "/ui/standard-forms",
                 "dir": "forms",
             },
             {
                 "name": "Standard Tables",
-                "path": "/pantry/standard-tables",
+                "path": "/ui/standard-tables",
                 "dir": "tables",
             },
             {
                 "name": "Pricing Sections",
-                "path": "/pantry/pricing-sections",
+                "path": "/ui/pricing-sections",
                 "dir": "pricing",
             },
             {
                 "name": "Popups",
-                "path": "/pantry/popups",
+                "path": "/ui/popups",
                 "dir": "popups",
             },
             {
                 "name": "Payments & Billing",
-                "path": "/pantry/payments-and-billing",
+                "path": "/ui/payments-and-billing",
                 "dir": "payments",
             },
             {
                 "name": "Table Pagination",
-                "path": "/pantry/table-pagination",
+                "path": "/ui/table-pagination",
                 "dir": "tables",
             },
             {
                 "name": "Onboarding & Progress",
-                "path": "/pantry/onboarding-and-progress",
+                "path": "/ui/onboarding-and-progress",
                 "dir": "onboardings",
             },
             {
                 "name": "Menus",
-                "path": "/pantry/menus",
+                "path": "/ui/menus",
                 "dir": "menus",
             },
             {
                 "name": "Backgrounds",
-                "path": "/pantry/backgrounds",
+                "path": "/ui/backgrounds",
                 "dir": "backgrounds",
             },
             {
                 "name": "Featured",
-                "path": "/pantry/featured",
+                "path": "/ui/featured",
                 "dir": "featured",
             },
             {
                 "name": "Descriptive Lists",
-                "path": "/pantry/descriptive-lists",
+                "path": "/ui/descriptive-lists",
                 "dir": "lists",
             },
             {
                 "name": "Timeline",
-                "path": "/pantry/timeline",
+                "path": "/ui/timeline",
                 "dir": "timeline",
             },
             {
                 "name": "Animations",
-                "path": "/pantry/animations",
+                "path": "/ui/animations",
                 "dir": "animations",
             },
             {
                 "name": "Prompt Boxes",
-                "path": "/pantry/prompt-boxes",
+                "path": "/ui/prompt-boxes",
                 "dir": "prompts",
             },
             {
                 "name": "Cards",
-                "path": "/pantry/cards",
+                "path": "/ui/cards",
                 "dir": "cards",
             },
             {
                 "name": "Subscribe",
-                "path": "/pantry/subscribe",
+                "path": "/ui/subscribe",
                 "dir": "subscribe",
             },
             {
                 "name": "Frequently Asked Questions",
-                "path": "/pantry/frequently-asked-questions",
+                "path": "/ui/frequently-asked-questions",
                 "dir": "faq",
             },
             {
                 "name": "Footers",
-                "path": "/pantry/footers",
+                "path": "/ui/footers",
                 "dir": "footers",
             },
             {
                 "name": "Inputs",
-                "path": "/pantry/inputs",
+                "path": "/ui/inputs",
                 "dir": "inputs",
                 "is_new": True,
             },
@@ -166,9 +166,9 @@ class Routes:
     resources: List[Dict[str, str]] = field(
         default_factory=lambda: [
             {"name": "Reflex Framework", "path": "https://reflex.dev/"},
-            {"name": "Source Code", "path": "https://github.com/LineIndent/buridan-ui"},
-            {"name": "GitHub", "path": "https://github.com/LineIndent"},
-            {"name": "@LineIndent", "path": "https://www.youtube.com/@lineindent"},
+            {"name": "Source Code", "path": "https://github.com/chaseme24/ReflexUI"},
+            {"name": "GitHub", "path": "https://github.com/chaseme24"},
+            {"name": "@LineIndent", "path": "https://www.youtube.com/@DasiCodeDaires"},
         ]
     )
 
@@ -180,7 +180,7 @@ class NavigationRoutes:
             {"name": "Home", "path": "/"},
             {"name": "Getting Started", "path": GettingStartedRoutes[0]["path"]},
             {"name": "Interactive Apps", "path": InteractiveRoutes[0]["path"]},
-            {"name": "Pantry", "path": PantryRoutes[0]["path"]},
+            {"name": "ui", "path": PantryRoutes[0]["path"]},
             {"name": "Charts", "path": ChartRoutes[0]["path"]},
         ]
     )

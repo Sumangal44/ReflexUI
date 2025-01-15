@@ -43,7 +43,7 @@ def base(url: str, page_name: str, **kwargs):
                                 base_content_path_ui(url),
                                 page_name,
                                 "See source code on GitHub →",
-                                "https://github.com/LineIndent/buridan-ui",
+                                "https://github.com/chaseme24/ReflexUI",
                             ),
                             *contents,
                             rx.divider(height="4em", opacity="0"),

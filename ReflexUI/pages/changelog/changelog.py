@@ -102,11 +102,11 @@ def changelog():
                     "New Apps and Site UI Changes",
                     "November 13, 2024",
                     [
-                        info("New pantry: Footers!"),
+                        info("New ui: Footers!"),
                         info("New chart item: Pie Charts!"),
                         info("New interactive app: PubMed A.I."),
                         info("UI changes to site landing page."),
-                        changelog_badge("party-popper", "buridan/ui v0.3.0"),
+                        changelog_badge("party-popper", "ReflexUI v0.3.0"),
                     ],
                 ),
                 wrapper(
@@ -117,7 +117,7 @@ def changelog():
                         info("Codebase refactor and state changes."),
                         info("Changes to code block theme and font size."),
                         info("Major changes to @component_wrapper menu items."),
-                        changelog_badge("party-popper", "buridan/ui v0.2.0"),
+                        changelog_badge("party-popper", " v0.2.0"),
                     ],
                 ),
                 wrapper(

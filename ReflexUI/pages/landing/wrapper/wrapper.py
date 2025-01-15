@@ -78,7 +78,7 @@ def landing_page_section_wrapper_main(
                     "Explore Pantry",
                     "solid",
                     SiteRoutingState.toggle_page_change(
-                        {"name": "Animations", "path": "/pantry/animations"}
+                        {"name": "Animations", "path": "/ui/animations"}
                     ),
                 ),
                 button_with_key(
@@ -86,7 +86,7 @@ def landing_page_section_wrapper_main(
                     "C",
                     "View Source",
                     "surface",
-                    rx.redirect("https://github.com/LineIndent/buridan-ui"),
+                    rx.redirect("https://github.com/chaseme24/ReflexUI"),
                 ),
                 width="100%",
                 max_width="25em",

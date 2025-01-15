@@ -1,11 +1,11 @@
-from .buridan import buridan
+from .ReflexUI import ReflexUI
 from .installation import installation
 from .introduction import introduction
 from ..changelog.changelog import changelog
 
 
 getting_started_config = {
-    "buridan": [buridan],
+    "ReflexUI": [ReflexUI],
     "installation": [installation],
     "introduction": [introduction],
     "changelog": [changelog],

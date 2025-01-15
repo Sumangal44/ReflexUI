@@ -5,7 +5,7 @@ import reflex as rx
 from dataclasses import dataclass, field
 from reflex.constants.colors import Color
 
-from buridan_ui.pantry.footers.v1 import FooterV1Style
+from ReflexUI.ui.footers.v1 import FooterV1Style
 
 active: Color = rx.color("slate", 12)
 passive: Color = rx.color("slate", 10)
@@ -53,7 +53,7 @@ def footer_v2() -> rx.vstack:
     return rx.vstack(
         rx.divider(max_width="35em", color=rx.color("slate", 11)),
         rx.hstack(
-            rx.text("© 2024 Buridan UI", **FooterV2Style.brand),
+            rx.text("© 2024 Reflex UI", **FooterV2Style.brand),
             rx.hstack(media("Twitter"), media("Dribble"), media("GitHub")),
             **FooterV2Style.content,
         ),

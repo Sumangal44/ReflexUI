@@ -10,10 +10,10 @@ def color_scheme_boxes(color: str):
     }
 
     name_map = {
-        "blue": "Fayrouz فَيْرُوز",
-        "ruby": "Yaqout يَاقُوت",
-        "jade": "Zumurud زُمُرُّد",
-        "gray": "Hematite هَيْمَاتِيت",
+        "blue": "Fayrouz ",
+        "ruby": "Yaqout ",
+        "jade": "Zumurud ",
+        "gray": "Hematite",
     }
 
     return rx.hover_card.root(

@@ -1,6 +1,6 @@
 import reflex as rx
 from ...wrappers.base import base
-from ...pantry.timeline.v1 import blip
+from ...ui.timeline.v1 import blip
 
 
 def wrapper(title: str, instructions: str, components=None, **kwargs):
