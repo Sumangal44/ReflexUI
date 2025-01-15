@@ -53,6 +53,7 @@ def render_prev_and_next_ui(routes: list[dict[str, str]]):
         width="100%",
         padding="0.80em 24px",
         radius="none",
+        bg = rx.color("slate",5),
         z_index="20",
         variant="soft",
         backdrop_filter="blur(5px)",

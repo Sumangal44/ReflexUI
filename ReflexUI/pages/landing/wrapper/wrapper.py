@@ -65,6 +65,7 @@ def landing_page_section_wrapper_main(
     return rx.vstack(
         # ... badge, title, subtitle, and link
         rx.vstack(
+            rx.badge(badge,variant="surface",size="1"),
             rx.heading(
                 title,
                 font_weight="900",
@@ -84,7 +85,7 @@ def landing_page_section_wrapper_main(
                 button_with_key(
                     "github",
                     "C",
-                    "View Source",
+                     "View Source",
                     "surface",
                     rx.redirect("https://github.com/chaseme24/ReflexUI"),
                 ),
