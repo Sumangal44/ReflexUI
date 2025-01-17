@@ -99,56 +99,20 @@ def changelog():
         rx.box(
             rx.vstack(
                 wrapper(
-                    "New Apps and Site UI Changes",
-                    "November 13, 2024",
+                    "ReflexUI v1.0.1 Deployed to Reflex",
+                    "january 16, 2025",
                     [
-                        info("New ui: Footers!"),
-                        info("New chart item: Pie Charts!"),
-                        info("New interactive app: PubMed A.I."),
-                        info("UI changes to site landing page."),
-                        changelog_badge("party-popper", "ReflexUI v0.3.0"),
+                        changelog_badge("party-popper", "ReflexUI v1.0.1"),
                     ],
                 ),
                 wrapper(
-                    "Site Refinement and UI Updates",
-                    "November 08, 2024",
+                    "ReflexUI v1.0.0 Deployed to Reflex",
+                    "january 16, 2025",
                     [
-                        info("Changes to Charts component wrapper."),
-                        info("Codebase refactor and state changes."),
-                        info("Changes to code block theme and font size."),
-                        info("Major changes to @component_wrapper menu items."),
-                        changelog_badge("party-popper", " v0.2.0"),
+                        changelog_badge("party-popper", "ReflexUI v1.0.0"),
                     ],
                 ),
-                wrapper(
-                    "New Interactive App: RAG AI Application",
-                    "October 30, 2024",
-                    [
-                        create_link(
-                            "RAG Application",
-                            "/intractive/retrieval-augmented-generation",
-                        ),
-                        changelog_badge("party-popper", "ReflexUI v0.1.0"),
-                    ],
-                ),
-                wrapper(
-                    "New Components and Improvements to Pantry Items",
-                    "October 21, 2024",
-                    [create_pantry_links(uisRoutes)],
-                ),
-                wrapper(
-                    "New Library Component: Charts",
-                    "October 18, 2024",
-                    [create_pantry_links(ChartRoutes)],
-                ),
-                wrapper(
-                    "ReflexUI v0.0.1 Deployed to Reflex",
-                    "October 16, 2024",
-                    [
-                        changelog_badge("party-popper", "ReflexUI v0.0.1"),
-                    ],
-                ),
-                wrapper("Initial Release", "October 5, 2024"),
+                wrapper("Initial Release", "january 16, 2025"),
                 **ChangelogStyle.content,
             ),
             width="100%",
